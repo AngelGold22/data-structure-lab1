@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+/**
+ * Created by osama on 1/13/2022.
+ */
+public class UsingMethod {
+    public static void main(String[] args) {
+        int [] arry=new int[5];
+        input(arry);
+        print(arry);
+    }
+    public static void print(int[]x)
+    {
+        for (int i = 0; i <x.length ; i++) {
+            System.out.print(x[i]+" ");
+        }
+    }
+    public static void input(int[]y)
+    {
+        Scanner input=new Scanner(System.in);
+        System.out.print("pls enter 5 int no");
+        for (int i = 0; i < y.length; i++) {
+            y[i]=input.nextInt();
+        }
+    }
+}
